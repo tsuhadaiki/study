@@ -9,4 +9,5 @@ class LinearRegression:
     def predict(self, x): 
         return np.dot(x, self.theta)
     def score(self, x, y): 
-        pass
+        error = self.predict(x) - y 
+        return (error**2).sum()
