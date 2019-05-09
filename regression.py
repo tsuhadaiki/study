@@ -7,6 +7,6 @@ class LinearRegression:
         temp=np.linalg.inv(np.dot(x.T,x))
         self.theata = np.dot(np.dot(temp,x.T),y)
     def predict(self, x): 
-        passimport
+        pass
     def score(self, x, y): 
         pass
